@@ -588,3 +588,74 @@ section {
 	  margin-top: 10px;
 	}
   }
+
+
+  @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-yellow, .hero-blue {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h1, h2 {
+        font-size: 36px;
+    }
+
+    .bento .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+    .bento .bento-item {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .work-experience .jobs {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .work-experience .jobs article {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+  @media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: var(--base-100);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+}
